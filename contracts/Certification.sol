@@ -3,14 +3,16 @@ pragma solidity ^0.8.13;
 contract Certification {
     //Element of the certificate 
     struct Certificate {
-        string uid;
-        string candidate_name;
-        string course_name;
-        string org_name;
-        string ipfs_hash;
+        string uid; //Unique Identifier for the certficate 
+        string candidate_name; // Name of the student 
+        string course_name; // Name of the course 
+        string org_name; //Name of the organization issue the certficate 
+        string ipfs_hash; // IPFS hash storing the certificate data
     }
 
+    //Mapping to store certificates by their ID
     mapping(string => Certificate) public certificates;
+    // Event emitted when a certificate is generated
     event certificateGenerated(string certificate_id);
 
     function generateCertificate(
@@ -78,6 +80,7 @@ contract Certification {
     function isVerified(
         string memory _certificate_id
     ) public view returns (bool) {
+        //Check if the certificate with the given ID exists 
         return bytes(certificates[_certificate_id].ipfs_hash).length != 0;
     }
 }
