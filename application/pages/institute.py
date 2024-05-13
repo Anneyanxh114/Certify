@@ -10,12 +10,13 @@ from connection import contract, w3
 from utils.streamlit_utils import hide_icons, hide_sidebar, remove_whitespaces
 
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-hide_icons()
-hide_sidebar()
-remove_whitespaces()
+hide_icons()  # Hide Streamlit icons
+hide_sidebar()  # Hide Streamlit sidebar
+remove_whitespaces()  # Remove unnecessary whitespaces
 
-load_dotenv()
+load_dotenv() # Load environment variables from .env file
 
+# Get Pinata API credentials from environment variables
 api_key = os.getenv("PINATA_API_KEY")
 api_secret = os.getenv("PINATA_API_SECRET")
 
@@ -57,6 +58,7 @@ if selected == options[0]:
     course_name = form.text_input(label="Course Name")
     org_name = form.text_input(label="Org Name")
 
+    # Handle form submission
     submit = form.form_submit_button("Submit")
     if submit:
         pdf_file_path = "certificate.pdf"
@@ -69,7 +71,7 @@ if selected == options[0]:
         data_to_hash = f"{uid}{candidate_name}{course_name}{org_name}".encode('utf-8')
         certificate_id = hashlib.sha256(data_to_hash).hexdigest()
 
-        # Smart Contract Call
+        # Invoke the smart contract function to generate the certificate
         contract.functions.generateCertificate(certificate_id, uid, candidate_name, course_name, org_name, ipfs_hash).transact({'from': w3.eth.accounts[0]})
         st.success(f"Certificate successfully generated with Certificate ID: {certificate_id}")
 
