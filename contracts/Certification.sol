@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
 contract Certification {
+    //Element of the certificate 
     struct Certificate {
         string uid;
         string candidate_name;
@@ -49,6 +49,7 @@ contract Certification {
         public
         view
         returns (
+            //view the certificate 
             string memory _uid,
             string memory _candidate_name,
             string memory _course_name,
@@ -73,7 +74,7 @@ contract Certification {
             cert.ipfs_hash
         );
     }
-
+    
     function isVerified(
         string memory _certificate_id
     ) public view returns (bool) {
