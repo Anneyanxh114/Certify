@@ -246,3 +246,44 @@ bool isVerified = certContract.isVerified("CERT-001");
 ```
 
 These examples demonstrate how to interact with the Certification smart contract to generate certificates, retrieve their details, and check their verification status.
+
+# Application Screenshots
+
+## Homepage
+
+![Homepage](Homepage.png)
+
+*This is a screenshot of the homepage, showcasing the interface of the website or application's main landing page.*
+
+## Login Page
+
+![Login Page](Loginpage.png)
+
+*This is a screenshot of the login page, where users can enter their credentials to access the system.*
+
+## Generate Certificate
+
+![Generate Certificate](generate%20certificate.png)
+
+*This image shows the interface for generating a certificate. Users can fill in the required information and click a button to generate a certificate.*
+
+## View Certificate
+
+![View Certificate](view%20certificate.png)
+
+*Here is a snapshot of the certificate view. Users can view and download the generated certificate in a visually appealing format.*
+
+## Verify Using ID
+
+![Verify Using ID](verify%20using%20ID.png)
+
+*In this screenshot, you can see the process of verifying a document using an ID. Users can upload an ID document and compare it with the provided information.*
+
+## Verify Using PDF
+
+![Verify Using PDF](verify%20using%20PDF.png)
+
+*This image demonstrates the verification process using a PDF document. Users can upload a PDF document and perform various verification checks.*
+
+
+
