@@ -25,7 +25,9 @@ The Blockchain Certificate Entry and Verification Platform is an application bas
 
 - **User Interface**: The platform offers an intuitive user interface built using the Streamlit application framework. Users can easily perform certificate entry, generation, and verification operations without needing in-depth knowledge of blockchain and smart contract technology.
 
-# Prerequisites
+# Installation and Deployment
+## Method 1: Manual Installation and Deployment
+**Prerequisites**
 - Globally installed packages for Truffle and Ganache-cli:
   ```shell
   npm install -g truffle
@@ -76,13 +78,6 @@ The Blockchain Certificate Entry and Verification Platform is an application bas
 
   Note: The institute email and password in the `.env` file will be used to log in as the institute inside the app.
 
-# Installation and Deployment
-## Method 1: Manual Installation and Deployment
-**Prerequisites:**
-- Make sure you have the following tools and dependencies installed:
-  - Ganache CLI (for launching a local blockchain node)
-  - Truffle (for compiling and deploying smart contracts)
-  - Streamlit (for running the application)
 **Steps:**
 1. Open a terminal anywhere and start the Ganache blockchain:
    ```shell
@@ -128,7 +123,7 @@ The Blockchain Certificate Entry and Verification Platform is an application bas
    docker-compose down
    ```
 
-Please note that you'll need your institution email (e.g., "XXX@gmail.com") and password (e.g., "XXX") to log in as a verifier for the certificate generation process.
+Please note that you'll need your institution email (e.g., "institute@gmail.com") and password (e.g., "123456") to log in as a verifier for the certificate generation process.
 
 # Dependencies and System Requirements
 
