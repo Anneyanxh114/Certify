@@ -2,12 +2,12 @@
 Blockchain Certificate Entry and Verification Platform
 
 # Group members:
-  - Gong Yiqi 3036056861
-  - Yan Xiaohan 3035770604
-  - Lin Yuxi 3035973361
-  - Zhou Xuekai 3035973763
-  - Qian Yifei 3035973880
-  - Ma Junchi 3036094722
+  - Gong Yiqi
+  - Yan Xiaohan
+  - Lin Yuxi 
+  - Zhou Xuekai 
+  - Qian Yifei 
+  - Ma Junchi 
 
 # Project Overview
 The Blockchain Certificate Entry and Verification Platform is an application based on blockchain technology and smart contracts. Its purpose is to simplify the process of certificate generation and verification while ensuring the integrity and authenticity of the certificates. By leveraging the immutability and decentralization features of blockchain, the platform provides a secure and reliable solution for certificate management and verification.
